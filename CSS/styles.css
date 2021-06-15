@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(Background-image.jpg); */
+  /* background-size: 1800px; */
+  /* background-position: center; */
+  overflow: hidden;
+}
+.background-video {
+  position: absolute;
+  vertical-align: baseline;
+}
+.video-mask {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.274);
+  backdrop-filter: blur(4px);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+::-webkit-scrollbar {
+  max-height: 50%;
+  height: 50%;
+}
+
+.logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -20px;
+  padding-bottom: 50px;
+  width: 250px;
+  position: relative;
+}
+
+/*-----------MENU ---------------------------*/
+.menu {
+  position: absolute;
+  text-align: center;
+  right: -155px;
+  color: #d690b3;
+  top: 350px;
+  font-family: "Fugaz One";
+  font-size: 23px;
+  transform: rotate(270deg);
+  cursor: default;
+}
+
+.menu-item {
+  display: inline;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #eacd5e;
+}
+
+/*----------REDES ----------------------------*/
+
+.socialMedia {
+  position: absolute;
+  color: #2fb4cf;
+  font-size: xx-large;
+  margin-left: 30px;
+  top: 200px;
+}
+
+.fa-spotify {
+  margin-top: 15px;
+}
+
+.fa-facebook-square {
+  margin-top: 15px;
+}
+
+.fa-youtube {
+  margin-left: -3px;
+  margin-top: 15px;
+}
+
+.fa-mug-hot {
+  margin-left: 2px;
+  margin-top: 15px;
+}
+
+.link {
+  color: #2fb4cf;
+}
+
+.link:hover {
+  color: #22879c;
+}
+
+.link:active {
+  color: #d690b3;
+}
+
+/*------ CONTENIDO MENU ----------------------------*/
+
+/* BIO------------------------------- */
+.bio {
+  display: block;
+  position: absolute;
+  color: #eacd5e;
+  height: 100%;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 250px;
+  margin-left: 14%;
+  margin-right: 11%;
+  padding-bottom: 250px;
+  cursor: default;
+
+  overflow-y: scroll; /* -----!!!-----*/
+  overflow-x: hidden; /* -----!!!-----*/
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity, margin-top;
+}
+
+/* VIDEOS------------------------------- */
+.videos {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 250px;
+  padding-bottom: 250px;
+  /* ///////// */
+  height: 100%;
+  overflow-y: scroll;
+  /* ///////// */
+  visibility: hidden; /*------------------//IMPORTANTE //-------*/
+
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity, margin-top;
+}
+.video {
+  padding: 10px;
+  margin: 0px;
+}
+
+/* MUSIC------------------------------- */
+.music {
+  font-family: "Fugaz One";
+  text-shadow: 2px 2px 4px #000000;
+
+  text-decoration: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 250px;
+  margin-left: 14%;
+  margin-right: 14%;
+
+  padding-bottom: 250px;
+  overflow-y: scroll;
+  height: 100%;
+
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity, margin-top;
+}
+.album {
+  padding-top: 25px;
+  margin-top: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.album img {
+  width: 300px;
+  padding: 0px;
+  margin: 0px;
+  transition-duration: 0.5s;
+  transition-property: width;
+}
+
+.album img:hover {
+  cursor: pointer;
+  width: 350px;
+}
+
+.text {
+  color: #d690b3;
+  text-align: left;
+  font-size: 12px;
+  padding: 0px 15px;
+  margin-top: 5px;
+  line-height: 23px;
+  cursor: default;
+}
+
+.text h2 {
+  font-size: 15px;
+  font-family: "Open Sans";
+  width: min-content;
+  margin: -20px 0px 0px 35px;
+}
+
+.text h2:hover {
+  cursor: pointer;
+  color: #eacd5e;
+}
+
+#album-position {
+  margin-bottom: -20px;
+}
+
+/*------EFECTOS GLOBALES-------------------------*/
+.overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  transition-duration: 0.5s;
+  transition-property: background-color, backdrop-filter;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.hidden {
+  display: none;
+}
+
+.opacity-animation {
+  opacity: 1;
+  visibility: visible;
+
+  margin-top: -100px;
+}
